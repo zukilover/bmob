@@ -183,6 +183,7 @@ button{
 .vid-info a { display: block; color: #fff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
 .main-image {
     cursor: pointer;
+    max-width: 100%;
 }
 @media (min-aspect-ratio: 16/9) {
     .video-foreground { height: 300%; top: -100%; }
