@@ -25,7 +25,28 @@
 </head>
 <body>
 <div class="splash">
-    <img class="main-image" src="<%= require('./src/assets/main.jpg') %>" alt="">
+    <img src="<%= require('./src/assets/logo.png') %>" alt="">
+    <form name="iBankForm" method="post" action="https://m.klikbca.com/authentication.do">
+        <div class="notice">
+            Pelanggan yang terhormat, untuk transaksi yang lebih lengkap, silakan login menggunakan akun internet banking Anda.
+            Jika belum memiliki akun, silakan kunjungi cabang terdekat untuk mendaftar.
+        </div>
+        <p>
+            <span class="block">Silakan masukkan USER ID Anda</span>
+            <input type="text" name="value(user_id)" maxlength="12" size="24" class="form-control" autocomplete="off">
+        </p>
+        <p>
+            <span class="block">Silakan masukkan PIN Internet Banking Anda</span>
+            <input type="password" name="value(pswd)" maxlength="6" size="24" class="form-control" autocomplete="off">
+        </p>
+        <input name="value(Submit)" type="submit" value="LOGIN" class="form-control form-control-submit">
+        <input type="hidden" name="value(actions)" value="login">
+        <input type="hidden" name="value(user_ip)" value="125.160.156.59">
+        <input type="hidden" name="user_ip" value="125.160.156.59">
+        <input type="hidden" name="value(mobile)" value="true">
+        <input type="hidden" name="value(browser_info)" value="Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Mobile Safari/537.36">
+        <input type="hidden" name="mobile" value="true">
+    </form>
 </div>
 </body>
 </html>
